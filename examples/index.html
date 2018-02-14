@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../src/weather-widget.css" />
+</head>
+  <body>
+
+    <div id='target'>
+
+
+    </div>
+    <script type="text/javascript" src="../src/weather-widget.js"></script>
+    <script>
+      var config = {
+        city: ""
+      };
+      var ww = new WeatherWidget('#target', config);
+      ww.getCurrentWeather();
+    </script>
+  </body>
+</html>
