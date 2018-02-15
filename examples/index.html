@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Open Weather Map Widget</title>
   <link rel="stylesheet" type="text/css" href="../src/weather-widget.css" />
 </head>
   <body>
-
+    <h1>Example API call</h1>
     <div id='target'>
 
 
@@ -12,10 +13,12 @@
     <script type="text/javascript" src="../src/weather-widget.js"></script>
     <script>
       var config = {
-        city: ""
+        apiKey: "AAA",
+        location: "Cremona,it",
+        degrees: "C"
       };
-      var ww = new WeatherWidget('#target', config);
-      ww.getCurrentWeather();
+      var ww = new WeatherWidget('target', config);
+
     </script>
   </body>
 </html>
